@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+header {
+  background-color: #eaeaea;
+  height: 30vh;
+}
+
+.container {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header p {
+  font-size: 1em;
+  text-align: center;
+  line-height: 30px;
+}
+
+header p span {
+  text-transform: uppercase;
+  color: orangered;
+}
+
+#section-one {
+  background-color: #cfcfcf;
+  height: 40vh;
+  color: #000;
+}
+
+.rating {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+}
+
+.rating a {
+  text-decoration: none;
+  border: 1px solid orange;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  font-size: 0.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 500ms;
+}
+
+.rating a:hover {
+  background-color: orange;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.b0:hover ~ a,
+.b1:hover ~ a,
+.b2:hover ~ a,
+.b3:hover ~ a,
+.b4:hover ~ a,
+.b5:hover ~ a,
+.b6:hover ~ a,
+.b7:hover ~ a,
+.b8:hover ~ a,
+.b9:hover ~ a,
+.b10:hover ~ a {
+  background-color: orange;
+  font-size: 0.6em;
+
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.rating#b10 .b10 ~ a,
+.rating#b10 .b10,
+.rating#b9 .b9 ~ a,
+.rating#b9 .b9,
+.rating#b8 .b8 ~ a,
+.rating#b8 .b8,
+.rating#b7 .b7 ~ a,
+.rating#b7 .b7,
+.rating#b6 .b6 ~ a,
+.rating#b6 .b6,
+.rating#b5 .b5 ~ a,
+.rating#b5 .b5,
+.rating#b4 .b4 ~ a,
+.rating#b4 .b4,
+.rating#b3 .b3 ~ a,
+.rating#b3 .b3,
+.rating#b2 .b2 ~ a,
+.rating#b2 .b2,
+.rating#b1 .b1 ~ a,
+.rating#b1 .b1,
+.rating#b0 .b0 ~ a,
+.rating#b0 .b0 {
+  background-color: orange;
+  font-size: 0.6em;
+
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#footer-rating {
+  margin-top: 20px;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+#section-two {
+  background-color: #eaeaea;
+  height: 30vh;
+  color: #000;
+}
+
+#section-two button {
+  padding: 20px 150px;
+  background: orange;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+#section-two button:hover {
+  background-color: rgba(255, 165, 0, 0.5);
+}
